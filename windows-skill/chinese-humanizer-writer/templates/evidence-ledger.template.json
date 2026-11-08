@@ -1,0 +1,14 @@
+{
+  "claims": [
+    {
+      "id": "claim-001",
+      "statement": "【待核实的重要事实原句】",
+      "status": "unverified",
+      "source_url": "",
+      "source_date": "",
+      "source_type": "primary",
+      "counterevidence": "",
+      "notes": ""
+    }
+  ]
+}

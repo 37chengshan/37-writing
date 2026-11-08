@@ -1,0 +1,13 @@
+{
+  "topic": "【待填主题】",
+  "account": "【待填自有账号】",
+  "status": "draft",
+  "target_platforms": ["wechat", "x", "xiaohongshu"],
+  "core_thesis": "【唯一主张】",
+  "target_reader": "【谁、什么实际场景】",
+  "editorial_angle": "【故事里的矛盾/反常判断】",
+  "storyline": "【钩子→推进→反转→代价→落点】",
+  "author_voice": "style_profiles/our_own_voice/【账号】",
+  "copyright_permissions": "【哪些素材已获授权】",
+  "human_approval_required": true
+}

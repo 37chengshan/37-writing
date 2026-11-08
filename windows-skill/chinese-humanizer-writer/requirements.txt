@@ -1,0 +1,3 @@
+# Python 3.10+
+beautifulsoup4>=4.11,<5
+# Tests use the Python stdlib unittest. lxml is not required.

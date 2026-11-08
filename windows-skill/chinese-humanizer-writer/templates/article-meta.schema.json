@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ArticleMetadata",
+  "description": "微信公众号与 X 文章语料元数据标准 Schema (11+ 核心字段，融合 writing-dna-skill 与 gongzhonghao-zhuaqu)",
+  "type": "object",
+  "required": [
+    "title",
+    "date",
+    "author",
+    "account",
+    "track",
+    "article_type",
+    "topic_tags",
+    "hook_type",
+    "structure_pattern",
+    "source_types",
+    "word_count",
+    "notable"
+  ],
+  "properties": {
+    "title": { "type": "string", "description": "文章完整标题" },
+    "date": { "type": "string", "description": "发布日期 YYYY-MM-DD" },
+    "author": { "type": "string", "description": "作者名" },
+    "account": { "type": "string", "description": "所属公众号或 X 账号名称" },
+    "track": {
+      "type": "string",
+      "enum": ["external", "self"],
+      "description": "双轨标记：external=外部标杆，self=我们自己的公众号"
+    },
+    "platform": {
+      "type": "string",
+      "enum": ["wechat", "x", "blog", "xiaohongshu"],
+      "description": "来源平台"
+    },
+    "column": { "type": "string", "description": "所属合集或栏目名称" },
+    "article_type": {
+      "type": "string",
+      "enum": ["深度分析", "访谈", "短评", "观察", "教程攻略", "实测", "综述"],
+      "description": "内容体裁分类（用于按体裁分立结构模板与抽取 5 篇同体裁原文）"
+    },
+    "topic_tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "主题标签列表"
+    },
+    "hook_type": {
+      "type": "string",
+      "enum": ["问题式", "场景式", "数据反差式", "观点暴击式", "时间锚点式", "悬念式"],
+      "description": "开篇前 200 字的钩子类型"
+    },
+    "structure_pattern": {
+      "type": "string",
+      "enum": ["总-分-总", "单点剥笋推进", "问题链驱动", "时间线叙事", "对比拆解式", "Q&A访谈式"],
+      "description": "全文主体推进结构"
+    },
+    "source_types": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "核心素材来源类型（一手实测、公开财报、人物对话、截图证据、案例对比）"
+    },
+    "word_count": { "type": "integer", "description": "正文字数" },
+    "notable": { "type": "string", "description": "本篇最值得借鉴的 1-2 个写法亮点或金句特征" },
+    "source_url": { "type": "string", "description": "原始链接" },
+    "dedup_key": { "type": "string", "description": "去重唯一键 (mid_idx 或 status_id 或 hash)" }
+  }
+}

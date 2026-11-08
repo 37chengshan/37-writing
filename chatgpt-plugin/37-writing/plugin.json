@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "37-writing",
+  "version": "0.1.0",
+  "description": "ChatGPT Web 中文原创写作助手：公众号人物故事、X 原生帖、小红书笔记、去AI套话、爆款标题与事实审稿。纯 Skill，不调用本地脚本或自动发布。",
+  "author": {
+    "name": "37chengshan"
+  },
+  "repository": "https://github.com/37chengshan/37-writing",
+  "keywords": [
+    "中文写作",
+    "公众号",
+    "X",
+    "小红书",
+    "去AI味",
+    "内容编辑",
+    "写作Skill"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "37 Writing · 中文写作工作台",
+        "shortDescription": "公众号·X·小红书原创写作",
+        "longDescription": "依据你提供的素材，做真实来源校对、标题钩子、故事推进、跨平台原创重写和去模板化审稿。支持写作、续写、改稿、爆款诊断。无自动发布或账号采集。",
+        "developerName": "37chengshan",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": [
+          "帮我把这个选题写成一篇有悬念、有情绪起伏的公众号故事。",
+          "把以下草稿改得更像真人写作，保留所有事实、数字和原有立场。",
+          "把这篇文章分别改成 X 线程和小红书笔记，不要机械摘要。"
+        ]
+      }
+    }
+  }
+}
