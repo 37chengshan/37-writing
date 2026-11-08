@@ -94,3 +94,14 @@ py -3 -m unittest discover -s tests -v
 ## 5. 内容来源与迁移
 
 原 v2 内容和四个脚本保留并维护；改动原因见 `docs/REVIEW-AND-MIGRATION.md`，参考仓库和 X 帖链接的验证边界见 `docs/SOURCES.md`。**先通过静态门禁，再人工核实与发布，最后把作者定稿反哺自有风格库。**
+
+## Windows 终端编码
+
+为确保重定向输出（尤其是 GitHub Actions 的英文 Windows Runner）能正确处理中文 JSON，运行本项目 Python CLI 之前建议在当前 PowerShell 会话设置：
+
+```powershell
+$env:PYTHONUTF8 = "1"
+$env:PYTHONIOENCODING = "utf-8"
+```
+
+这两个设置只作用于当前会话及其子进程，不改 Windows 的全局系统配置。
