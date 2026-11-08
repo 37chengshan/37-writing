@@ -37,4 +37,4 @@
 
 标题 3 个（搜索型、情绪型、反差型） + 正文 + 首屏三行说明 + 标签候选 + 封面标题/图卡结构 + 风险备注。用户只需一篇正文时删减附加信息。
 
-静态校验：`py -3 scripts/platform_quality_gate.py --platform xiaohongshu --input draft-xiaohongshu.md --json`。
+ChatGPT Web 交付前手工核对标题兑现、首屏承诺、标签相关性与真实体验；不运行 Windows 脚本。

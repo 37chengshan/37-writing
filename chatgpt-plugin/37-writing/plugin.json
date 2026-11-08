@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "37-writing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ChatGPT Web 中文原创写作助手：公众号人物故事、X 原生帖、小红书笔记、去AI套话、爆款标题与事实审稿。纯 Skill，不调用本地脚本或自动发布。",
   "author": {
     "name": "37chengshan"

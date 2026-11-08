@@ -1,3 +1,5 @@
+> **ChatGPT Web 使用提示**：以下量化范围、所谓“黄金律”、具体分数和句长示例仅供写作实验，不是经验证的普适人类写作指标，不得作为自动评分硬门槛。以用户真实样本、作品目的、内容真实性及逐段阅读效果为准。无需运行任何本地工具。
+
 # 中文审美、表达 DNA 蒸馏与全栈多场景适配指南
 
 如果仅仅删掉 AI 套话，文章可能只是从“啰嗦的机器”变成“干瘪的机器”。要写出真正有质感的中文，必须注入**审美（Taste）**、**表达 DNA（Expression DNA）**与**全栈结构设计**。本指南融合了 [Leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill)、[alchaincyf/nuwa-skill](https://github.com/alchaincyf/nuwa-skill)、[dongbeixiaohuo/writing-agent](https://github.com/dongbeixiaohuo/writing-agent)、[OUBIGFA/De-AI-Prompt-Enhancer-Writer-Booster-SKILL](https://github.com/oubigfa/de-ai-prompt-enhancer-writer-booster-skill) 与 [hylarucoder/ai-flavor-remover](https://github.com/hylarucoder/ai-flavor-remover) 的核心技法。

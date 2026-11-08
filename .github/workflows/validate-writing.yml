@@ -1,0 +1,25 @@
+name: Validate writing skills
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Windows skill dependencies
+        run: python -m pip install -r windows-skill/chinese-humanizer-writer/requirements.txt
+      - name: Test web plugin contract
+        run: python -m unittest discover -s tests -v
+      - name: Test local writer tools
+        working-directory: windows-skill/chinese-humanizer-writer
+        run: python -m unittest discover -s tests -v

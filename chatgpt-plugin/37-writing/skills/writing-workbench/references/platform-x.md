@@ -31,7 +31,7 @@
 第二条：给证据，解释第一条为何成立。
 ```
 
-静态检查：`py -3 scripts/platform_quality_gate.py --platform x --input draft-x.md --json --strict`。
+ChatGPT Web 交付前需逐帖检查当前平台字符上限、链接折算及结构；不运行 Windows 脚本。
 
 ### 获取外部 X 语料的边界
 
